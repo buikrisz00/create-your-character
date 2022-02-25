@@ -4,9 +4,44 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>This is FRONTEND</title>
+	<title>Create a character</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<form>
+			<label for="charName">Character name:</label>
+			<input type="text" id="charName" name="charName" placeholder="Choose a name">
+			<label for="charGender">Choose a gender:</label>
+			<select id="charGender" name="charGender" placeholder="Choose gender">
+				<option value="" disabled selected hidden>Choose gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="droid">Droid</option>
+			</select>
+			<label for="charRace">Choose a race:</label>
+			<select id="charRace" name="charRace" placeholder="Choose race">
+				<option value="" disabled selected hidden>Choose race</option>
+				<option value="human">Human</option>
+				<option value="tusken">Tusken</option>
+				<option value="rodian">Rodian</option>
+				<option value="mando">Mandalorian</option>
+			</select>
+			<label for="charClass">Choose a class:</label>
+			<select id="charClass" name="charClass" placeholder="Choose class">
+				<option value="" disabled selected hidden>Choose class</option>
+				<option value="jedi">Jedi</option>
+				<option value="sith">Sith</option>
+				<option value="stormtrooper">Stormtrooper</option>
+			</select>
+		</form>
+		<div class="charLooks">
+			<h1 class="charNameH1">Choose a name</h1>
+			<img src="images/basic_gender.png" alt="genderIcon" class="genderIcon">
+			<img src="images/base_head.png" alt="raceImg" class="raceImg">
+			<img src="images/base_body.png" alt="classImg" class="classImg">
+		</div>
+	</div>
 </body>
 </html>
